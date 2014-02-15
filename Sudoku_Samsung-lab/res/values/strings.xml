@@ -8,5 +8,9 @@
     <string name="clean">Очистить</string>
     <string name="check">Проверить</string>
 	<string name="chooseLvl">Выберите кол-во подсказок</string>
-
+	<string name="confirmLvl">Стартуем</string>
+	<string name="correct">Верняк</string>
+	<string name="incorrect">Ошибочка вышла</string>
+	<string name="notFill">Поле-то не заполнено</string>
+	<string name="solve">Решить</string>
 </resources>

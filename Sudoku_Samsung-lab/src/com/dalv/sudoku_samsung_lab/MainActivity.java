@@ -1,5 +1,6 @@
 package com.dalv.sudoku_samsung_lab;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -10,6 +11,7 @@ public class MainActivity extends FragmentActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
 		SudokuFragment firstFragment = new SudokuFragment(); 
 		setContentView(R.layout.activity_main);
         getSupportFragmentManager().beginTransaction()
@@ -20,7 +22,6 @@ public class MainActivity extends FragmentActivity {
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		Log.d("dalvv", data.getStringExtra("value")+" Activity");
 	    if (data == null || data.getStringExtra("value").equals(getResources().getString(R.string.back))) {return;}
 	    String name = data.getStringExtra("value");
 	    SudokuFragment frag = (SudokuFragment) (getSupportFragmentManager().findFragmentById(R.id.FLgame));
